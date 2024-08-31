@@ -1,6 +1,6 @@
 import "./index.scss";
 import leftBg from "../../assets/png/left-section.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ArrowLeft from "../../assets/svg/arrowLeft";
 import CustomButton from "../../components/customButton";
 import googleIcon from "../../assets/png/google.png";

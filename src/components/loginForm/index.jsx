@@ -15,7 +15,7 @@ const LoginForm = () => {
       className="login_form_inner"
       onSubmit={(e) => {
         e.preventDefault();
-        navigate("/dashboard");
+        navigate("/dashboard/_");
       }}
     >
       <label htmlFor="">
