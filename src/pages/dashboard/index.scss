@@ -1,0 +1,124 @@
+.dashboard {
+    display: flex;
+    // justify-content: space-between;
+    margin-right: 80px;
+    gap: 20px;
+    align-items: flex-start;
+
+    .dashboard_left {
+        flex-basis: 48%;
+
+        .wallet,
+        .referral,
+        .referral_count {
+            padding: 30px;
+            border: 2px solid rgba(215, 225, 244, 1);
+            border-radius: 24px;
+            margin-bottom: 20px;
+        }
+
+        .wallet {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .balance {
+                color: rgba(60, 81, 124, 1);
+
+                >p {
+                    margin-bottom: 10px;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+
+                .amt {
+                    font-size: 36px;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+
+        .referral {
+            color: rgba(60, 81, 124, 1);
+
+            p {
+                margin-bottom: 20px;
+            }
+
+            .actions {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                button {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+
+                    span {
+                        color: rgba(65, 105, 225, 1);
+                    }
+                }
+            }
+        }
+
+        .referral_count {
+            color: rgba(60, 81, 124, 1);
+            margin-bottom: 0 !important;
+
+            .referral_count_top {
+                display: flex;
+                gap: 25px;
+                margin-bottom: 20px;
+
+                p {
+                    margin-bottom: 15px;
+
+                    &.amt {
+                        margin-bottom: 0;
+                        font-size: 24px;
+                        font-weight: 600;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                button {
+                    background: none;
+                    border: none;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    cursor: pointer;
+
+                    span {
+                        color: rgba(65, 105, 225, 1);
+                    }
+                }
+            }
+        }
+    }
+
+    .dashboard_right {
+        flex-basis: 53%;
+        object-fit: contain;
+        // height: 324px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

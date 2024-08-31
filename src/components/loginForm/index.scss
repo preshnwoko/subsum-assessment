@@ -1,0 +1,87 @@
+.login_form_inner {
+    width: 100%;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+
+    label {
+        display: block;
+        margin-bottom: 20px;
+
+        >p {
+            color: rgba(76, 104, 158, 1);
+            margin-bottom: 3px;
+        }
+
+        input {
+            width: 100%;
+            outline: none;
+            border: 1px solid rgba(215, 225, 244, 1);
+            font-size: 16px;
+            font-weight: 400;
+            padding: 14px;
+            color: rgba(43, 59, 90, 1);
+        }
+
+        .password_input {
+            border: 1px solid rgba(215, 225, 244, 1);
+            padding: 14px;
+            display: flex;
+            align-items: center;
+
+
+            input {
+                border: none;
+                font-size: 16px;
+                padding: 0;
+                font-weight: 400;
+            }
+
+            >svg {
+                right: 0;
+            }
+        }
+
+    }
+
+    .remember_forget {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            // toggle button controls customization
+            .react-toggle--checked .react-toggle-track {
+                background: rgba(239, 243, 251, 1) !important
+            }
+
+            .react-toggle-track {
+                background: rgba(239, 243, 251, 1);
+                border: 0.5px solid rgba(215, 225, 244, 1);
+            }
+
+            .react-toggle--checked .react-toggle-thumb,
+            .react-toggle--focus .react-toggle-thumb {
+                box-shadow: none !important;
+            }
+
+            .react-toggle:active {
+                box-shadow: none !important;
+            }
+
+            .react-toggle-thumb {
+                border: none !important;
+                background: white;
+            }
+
+            span {
+                color: rgba(76, 104, 158, 1);
+            }
+        }
+    }
+}
